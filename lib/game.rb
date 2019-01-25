@@ -65,4 +65,8 @@ class Game
   end
  end
  
+ def start 
+   
+ end
+ 
 end
