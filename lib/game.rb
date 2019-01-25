@@ -77,7 +77,7 @@ class Game
      elsif input == '2'
      game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
      end
-    game = Game.new
+     
     until game.won?
     game.play
 
