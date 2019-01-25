@@ -73,9 +73,9 @@ class Game
    if input == '0'
      Game.new(Players::Computer.new("X"),Players::Computer.new("O"), Board.new)
      elsif input == '1'
-     Game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
+     Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
      elsif input == '2'
-      Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
+      Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
      end
       
     # puts "Who would like to go first?"
