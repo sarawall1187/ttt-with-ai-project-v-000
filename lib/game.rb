@@ -69,8 +69,8 @@ class Game
    puts "Welcome to Tic Tac Toe!"
    puts "Would you like to play '0', '1', or '2' players?"
    input = gets.strip
+    binding.pry
    if input == '0'
-     binding.pry
      Game.new(Players::Computer.new("X"),Players::Computer.new("O"), Board.new)
      elsif input == '1'
      Game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
