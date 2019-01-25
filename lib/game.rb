@@ -77,7 +77,7 @@ class Game
      elsif input == '2'
      game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
      end
-     # puts "Who would like to go first?"
+     puts "Who would like to go first?"
     until game.won?
      game.play
     end
