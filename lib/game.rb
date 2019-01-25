@@ -71,13 +71,16 @@ class Game
    input = gets.strip
    
    if input == '0'
-     Game.new(Players::Computer.new("X"),Players::Computer.new("O"), Board.new)
+    game = Game.new(Players::Computer.new("X"),Players::Computer.new("O"), Board.new)
      elsif input == '1'
-     Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+     game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
      elsif input == '2'
-      Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+     game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
      end
-    
+    game = Game.new
+    until game.won?
+    game.play
+
     # puts "Who would like to go first?"
     
  end
