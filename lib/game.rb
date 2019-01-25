@@ -69,7 +69,7 @@ class Game
    puts "Welcome to Tic Tac Toe!"
    puts "Would you like to play '0', '1', or '2' players?"
    input = gets.strip
-  
+    game = 
    if input == '0'
      Game.new(Players::Computer.new("X"),Players::Computer.new("O"), Board.new)
      elsif input == '1'
@@ -77,7 +77,7 @@ class Game
      elsif input == '2'
       Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
      end
-      game = 
+    
     # puts "Who would like to go first?"
     
  end
