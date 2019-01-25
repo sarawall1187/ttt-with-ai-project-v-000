@@ -67,8 +67,10 @@ class Game
  
  def start 
    puts "Welcome to Tic Tac Toe!"
-    puts "Would you like to play '0', '1', or '2' players?"
-    input = gets.strip
+   puts "Would you like to play '0', '1', or '2' players?"
+   input = gets.strip
+   if input == '0'
+     game.new()
  end
  
 end
