@@ -70,7 +70,7 @@ class Game
    puts "Would you like to play '0', '1', or '2' players?"
    input = gets.strip
    if input == '0'
-     game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
+     game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
      elsif input == '1'
      game.new(player_1=Players::Human.new("X"), player_2=Players::Computer.new("O"), board=Board.new)
  end
