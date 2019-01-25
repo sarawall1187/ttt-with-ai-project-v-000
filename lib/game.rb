@@ -47,6 +47,7 @@ class Game
  
  
  def turn
+   puts "Select 1-9"
     choice = current_player.move(board)
     if board.valid_move?(choice)
       board.update(choice, current_player)
