@@ -78,7 +78,7 @@ class Game
       Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
      end
       
-    puts "Who would like to go first?"
+    # puts "Who would like to go first?"
     
  end
  
