@@ -77,6 +77,7 @@ class Game
      elsif input == '2'
       Game.new(player_1=Players::Human.new("X"), player_2=Players::Human.new("O"), board=Board.new)
      end
+     binding.pry
     puts "Who would like to go first?"
     
  end
