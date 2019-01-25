@@ -79,7 +79,7 @@ class Game
      end
      
     until game.won?
-    game.play
+     game.play
 
     # puts "Who would like to go first?"
     
